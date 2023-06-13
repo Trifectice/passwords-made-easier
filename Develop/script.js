@@ -3,13 +3,18 @@
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
-test test test
+
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-test test test
-  passwordText.value = password;
+  // Prompt for password criteria
+  var length = prompt("Enter the length of the password (8-128 characters):");
+  length = parseInt(length);
+
+  // Validate the length input
+  if (isNaN(length) || length < 8 || length > 128) {
+    alert("Please enter a number between 8 and 128.");
+    return;
+  }
 
 }
 
