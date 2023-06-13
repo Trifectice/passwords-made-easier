@@ -15,7 +15,16 @@ function writePassword() {
     return;
   }
 
+  var includeLowercase = confirm("Would you like lowercase characters?");
+  var includeUppercase = confirm("Would you like uppercase characters?");
+  var includeNumeric = confirm(" Do you want numeric characters?");
+  var includeSpecial = confirm("Do you want special characters?");
+  
   // One character selection validation here
+  if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) {
+    alert("You must select at least one character type.");
+    return;
+  }
 
 }
 
