@@ -26,6 +26,10 @@ function writePassword() {
     return;
   }
 
+  var password = generatePassword(length, includeLowercase, includeUppercase, includeNumeric, includeSpecial);
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
 }
 
 //Password generation goes here
