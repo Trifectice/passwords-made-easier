@@ -33,7 +33,13 @@ function writePassword() {
 }
 
 //Password generation goes here
-
+function generatePassword(length, includeLowercase, includeUppercase, includeNumeric, includeSpecial)
+   var characters = "";
+   var lowercase = "abcdefghijklmnopqrstuvwxyz";
+   var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   var numeric = "0123456789"; 
+   var special = "!@#$%^&*:;?><,./-=()_+~`|{}[]\:"
+   
 //selected criteria character builder
 
 //Random password generation
