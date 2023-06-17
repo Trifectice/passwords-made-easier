@@ -42,23 +42,23 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
 
   //selected criteria character builder
   if (includeLowercase) {
-    characters =+ lowercase;
+    characters += lowercase;
   }
   if (includeUppercase) {
-    characters =+ uppercase;
+    characters += uppercase;
   }
   if (includeNumber) {
-    characters =+ number;
+    characters += number;
   }
   if (includeSpecial) {
-    characters =+ special;
+    characters += special;
   }
 
   var password = "";
   //Random password generation
     for (var i = 0; i < length; i++) {
       var outPut = Math.floor(Math.random() * characters.length);
-      password =+ characters[outPut];
+      password += characters[outPut];
  }
 
   return password;
