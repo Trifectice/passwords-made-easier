@@ -56,6 +56,10 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
 
   var password = "";
   //Random password generation
+    for (var i = 0; i < length; i++) {
+      var outPut = Math.floor(Math.random() * characters.length);
+      password =+ characters[outPut];
+ }
 
-  // Add event listener to generate button
+  return password;
 }
